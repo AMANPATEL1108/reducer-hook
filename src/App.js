@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { Component, useReducer } from "react";
+import Counter from "./components/Counter";
 import CounterOne from "./components/CounterOne";
 import CounterTwo from "./components/CounterTwo";
 import CounterThree from "./components/CounterThree";
@@ -9,6 +10,13 @@ import ComponentC from "./components/ComponentC";
 import ComponentA from "./components/ComponentA";
 import DataFeatchingOne from "./components/DataFeatchingOne";
 import DataFeatchingTwo from "./components/DataFeatchingTwo";
+import ParentComponent from "./components/ParentComponent";
+import FocusInput from "./components/FocusInput";
+import ClassTimer from "./components/ClassTimer";
+import DocTitleOne from "./components/DocTitleOne";
+import DocTitleTwo from "./components/DocTitleTwo";
+import CounterOneOne from "./components/CounterOneOne";
+import UserForm from "./components/UserForm";
 export const CountContext = React.createContext();
 
 // const initialState = 0;
@@ -33,7 +41,15 @@ function App() {
   //     value={{ countState: count, countDispatch: dispatch }}
   //   >
   <div className="App">
-    <DataFeatchingTwo />
+    <UserForm />
+    {/* <CounterOneOne /> */}
+    {/* <DocTitleOne />
+    <DocTitleTwo /> */}
+    {/* <ClassTimer /> */}
+    {/* <FocusInput /> */}
+    {/* <Counter /> */}
+    {/* <ParentComponent /> */}
+    {/* <DataFeatchingTwo /> */}
     {/* <DataFeatchingOne /> */}
     {/* Counter - {count}
         <ComponentA />
